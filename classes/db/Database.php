@@ -16,9 +16,10 @@ class Database {
     private function __construct() {
         try {
             $this->db = new PDO(
-                'mysql:host=localhost;dbname=carjack;charset=utf8',
-                'root',
-                'password');
+                'mysql:host=' . getenv('DB_HOST') . ';dbname=' . getenv('DB_NAME') . ';charset=utf8',
+                getenv('DB_USERNAME'),
+                getenv('DB_PASSWORD')
+            );
             $this->db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             $this->db->setAttribute(PDO::ATTR_EMULATE_PREPARES, true);
         } catch (PDOException $pdo) {
