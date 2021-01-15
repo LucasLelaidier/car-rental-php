@@ -111,4 +111,4 @@ describe('How to fail register', () => {
         cy.get('#reset').click();
 
     });
-})
+});

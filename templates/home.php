@@ -37,7 +37,7 @@
                     ?>
 
                     <?= "<h5 class=\"text-$color\" >Stock : $stock </h5>"; ?>
-                    <a href="/car/<?= $car['_id'] ?>"><button class="btn btn-primary">Details</button></a>
+                    <a href="/car/<?= $car['_id'] ?>"><button id="<?= $car['_id'] ?>" class="btn btn-primary">Details</button></a>
                     <?php if ($loginInfo != 0) { ?>
                         <?php if ($stock == 0) $disable = "disabled"; else $disable = ""; ?>
 

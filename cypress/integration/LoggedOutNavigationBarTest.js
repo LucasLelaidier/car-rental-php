@@ -14,5 +14,5 @@ describe('Navigation bar while log out', () => {
         cy.contains('You are logged out!').should('be.visible');
 
 
-    })
-})
+    });
+});

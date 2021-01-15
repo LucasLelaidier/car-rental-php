@@ -22,6 +22,7 @@ describe('How to register', () => {
 
         cy.get('#submit').click();
 
-        cy.contains('Successfully registered!').should ('be.visible');
+        //cy.contains('Successfully registered!').should ('be.visible');
+        cy.contains('User with this email already exists!').should ('be.visible');
     });
-})
+});

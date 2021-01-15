@@ -22,4 +22,4 @@ describe('How to Sign In', () => {
 
         cy.contains('You are signed in!').should('be.visible');
     });
-})
+});
