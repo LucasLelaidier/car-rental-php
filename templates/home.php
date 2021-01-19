@@ -41,7 +41,7 @@
                     <?php if ($loginInfo != 0) { ?>
                         <?php if ($stock == 0) $disable = "disabled"; else $disable = ""; ?>
 
-                        <a href="/rent/<?= $car['_id'] ?>" class="btn btn-<?=$color . " " . $disable?>" style="margin-left: 10px;">Rent</a>
+                        <a href="/rent/<?= $car['_id'] ?>" id="rent_<?= $car['_id'] ?>" class="btn btn-<?=$color . " " . $disable?>" style="margin-left: 10px;">Rent</a>
                     <?php } ?>
                 </div>
             </div>

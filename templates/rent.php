@@ -88,7 +88,7 @@
                             </div>
                             <div class="radio-inline">
                                 <label>
-                                    <input type="radio" name="mode" id="optionsRadios2" value="km" <?=$kmMode?>>
+                                    <input type="radio" name="mode" id="optionsRadios3" value="km" <?=$kmMode?>>
                                     Per KM
                                 </label>
                             </div>
@@ -110,8 +110,8 @@
                     </div>
                     <div class="form-group">
                         <div class="col-lg-offset-2">
-                            <button type="reset" class="btn btn-default" style="margin-right: 10px;">Cancel</button>
-                            <button type="submit" class="btn btn-<?=$color?>">Rent</button>
+                            <button type="reset" id="cancel" class="btn btn-default" style="margin-right: 10px;">Cancel</button>
+                            <button type="submit" id="rentBtn" class="btn btn-<?=$color?>">Rent</button>
                         </div>
                     </div>
 

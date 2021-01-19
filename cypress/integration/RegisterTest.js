@@ -4,25 +4,24 @@ describe('How to register', () => {
 
         cy.get('#register-link').click();
 
-        cy.get('#firstname').type('TEST');
-        cy.get('#lastname').type('TEST');
-        cy.get('#email').type('TEST@email.com');
-        cy.get('#username').type('TEST');
-        cy.get('#password').type('TEST123');
-        cy.get('#password_two').type('TEST123');
-        cy.get('#street').type('TEST');
-        cy.get('#city').type('TEST');
-        cy.get('#state').type('TEST');
-        cy.get('#country').type('TEST');
-        cy.get('#zip').type('TEST');
-        cy.get('#phone').type('TEST');
+        cy.get('#firstname').type('USER');
+        cy.get('#lastname').type('USER');
+        cy.get('#email').type('USER@email.com');
+        cy.get('#username').type('USER');
+        cy.get('#password').type('USER123');
+        cy.get('#password_two').type('USER123');
+        cy.get('#street').type('USER');
+        cy.get('#city').type('USER');
+        cy.get('#state').type('USER');
+        cy.get('#country').type('USER');
+        cy.get('#zip').type('USER');
+        cy.get('#phone').type('USER');
         cy.get('#genderF').click();
         cy.get('#genderM').click();
         cy.get('#genderU').click();
 
         cy.get('#submit').click();
 
-        //cy.contains('Successfully registered!').should ('be.visible');
-        cy.contains('User with this email already exists!').should ('be.visible');
+        cy.contains('Successfully registered!').should ('be.visible');
     });
 });

@@ -4,8 +4,8 @@ describe('How to Sign In', () => {
 
         cy.get('#signin-link').click();
 
-        cy.get('#username').type('Erwann');
-        cy.get('#password').type('password');
+        cy.get('#username').type('USER');
+        cy.get('#password').type('USER123');
 
         cy.get('#reset').click();
         cy.get('#username').should('be.empty');
@@ -15,8 +15,8 @@ describe('How to Sign In', () => {
         cy.contains('username is required!');
         cy.contains('password is required!');
 
-        cy.get('#username').type('Erwann');
-        cy.get('#password').type('password');
+        cy.get('#username').type('USER');
+        cy.get('#password').type('USER123');
         cy.get('#submit').click();
 
 
