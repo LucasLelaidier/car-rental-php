@@ -29,9 +29,9 @@
 
             <div class="well" style="background-color: #effeff">
                 <ul class="nav nav-tabs">
-                    <li class="active"><a href="#rate_by_hour" data-toggle="tab" aria-expanded="true">Per Hour</a></li>
-                    <li class=""><a href="#rate_by_day" data-toggle="tab" aria-expanded="false">Per Day</a></li>
-                    <li class=""><a href="#rate_by_km" data-toggle="tab" aria-expanded="false">Per KM</a></li>
+                    <li class="active"><a id="hour" href="#rate_by_hour" data-toggle="tab" aria-expanded="true">Per Hour</a></li>
+                    <li class=""><a id="day" href="#rate_by_day" data-toggle="tab" aria-expanded="false">Per Day</a></li>
+                    <li class=""><a id="km" href="#rate_by_km" data-toggle="tab" aria-expanded="false">Per KM</a></li>
                 </ul>
 
                 <div id="tab-content" class="tab-content">
@@ -56,7 +56,7 @@
             <?php if ($loginInfo != 0) { ?>
                 <?php if ($stock == 0) $disable = "disabled"; else $disable = ""; ?>
 
-                <a href="/rent/<?= $car['_id'] ?>" class="btn btn-<?=$color . " " . $disable?>">Rent</a>
+                <a id="<?= $car['_id'] ?>" href="/rent/<?= $car['_id'] ?>" class="btn btn-<?=$color . " " . $disable?>">Rent</a>
             <?php } else { ?>
                 <h6>Sign In/Register to rent cars!</h6>
             <?php } ?>

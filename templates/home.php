@@ -37,11 +37,11 @@
                     ?>
 
                     <?= "<h5 class=\"text-$color\" >Stock : $stock </h5>"; ?>
-                    <a href="/car/<?= $car['_id'] ?>"><button class="btn btn-primary">Details</button></a>
+                    <a href="/car/<?= $car['_id'] ?>"><button id="<?= $car['_id'] ?>" class="btn btn-primary">Details</button></a>
                     <?php if ($loginInfo != 0) { ?>
                         <?php if ($stock == 0) $disable = "disabled"; else $disable = ""; ?>
 
-                        <a href="/rent/<?= $car['_id'] ?>" class="btn btn-<?=$color . " " . $disable?>" style="margin-left: 10px;">Rent</a>
+                        <a href="/rent/<?= $car['_id'] ?>" id="rent_<?= $car['_id'] ?>" class="btn btn-<?=$color . " " . $disable?>" style="margin-left: 10px;">Rent</a>
                     <?php } ?>
                 </div>
             </div>

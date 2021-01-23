@@ -1,0 +1,12 @@
+{
+  "testFiles": [
+    "LoggedOutNavigationBarTest.js",
+    "RegisterTest.js",
+    "FailRegisterTest.js",
+    "SignInTest.js",
+    "LoggedInNavigationBarTest.js",
+    "RentCarsTest.js",
+    "RentalsTest.js"
+
+  ]
+}
