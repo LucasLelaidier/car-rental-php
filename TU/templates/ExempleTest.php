@@ -2,15 +2,12 @@
 
 use PHPUnit\Framework\TestCase;
 
-class UtilsTest extends TestCase
+class ExempleTest extends TestCase
 {
   public function test_premierTest()
   {
-    $stack = [];
-    $this->assertEmpty($stack);
-    $this->assertEquals("1","1");
-
-    return $stack;
+    $test = [];
+    $this->assertEmpty($test);
   }
 
   public function test_secondTest()
@@ -18,5 +15,5 @@ class UtilsTest extends TestCase
     $value = 1;
     $this->assertEquals($value,1);
   }
-  
+
 }
