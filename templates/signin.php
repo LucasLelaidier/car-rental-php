@@ -8,7 +8,7 @@
                 <div class="form-group">
                     <label for="inputUsername" class="col-lg-2 control-label">Username</label>
                     <div class="col-lg-10">
-                        <?php echo "<input type='text' class='form-control' name='username' value='" . @$values["username"] . "' placeholder='Username/Email' >" ?>
+                        <?php echo "<input type='text' class='form-control' id='username' name='username' value='" . @$values["username"] . "' placeholder='Username/Email' >" ?>
                     </div>
                 </div>
                 <div class="form-group">
@@ -22,8 +22,8 @@
                 </div>
                 <div class="form-group">
                     <div class="col-lg-offset-2">
-                        <button type="reset" class="btn btn-default" style="margin-right: 10px;">Cancel</button>
-                        <button type="submit" class="btn btn-primary">Sign In</button>
+                        <button type="reset" id="reset" class="btn btn-default" style="margin-right: 10px;">Cancel</button>
+                        <button type="submit" id="submit" class="btn btn-primary">Sign In</button>
                     </div>
                 </div>
             </fieldset>

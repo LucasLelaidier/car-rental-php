@@ -1,0 +1,22 @@
+{
+  "name": "car-rental-php",
+  "version": "1.0.0",
+  "description": "[![Codacy grade](https://img.shields.io/codacy/grade/442c898ff2c64dc9956a214bbc9c5b80.svg)]()\r [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)  \r > Car Rental Project in PHP",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LucasLelaidier/car-rental-php.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LucasLelaidier/car-rental-php/issues"
+  },
+  "homepage": "https://github.com/LucasLelaidier/car-rental-php#readme",
+  "dependencies": {
+    "cypress": "^6.2.1"
+  }
+}
